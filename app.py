@@ -11,11 +11,11 @@ app = Flask(__name__,template_folder='template')
 @app.route('/index')
 def home(name):
    return render_template('index.html')
-@app.route('/')
+@app.route('/mytemplate')
 def user():
    dbfield_list = ["first name", "Last name", "Mobile No"]
    return render_template('user.html',dbfield_list=dbfield_list)
-@app.route('/mytemplate')
+@app.route('/')
 def mytemplate():
    #Create a template
    load_dotenv()   
