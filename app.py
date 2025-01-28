@@ -34,7 +34,10 @@ def mytemplate():
    port = os.getenv('port')
    password = os.getenv('password')
    host = os.getenv('host')
-   connection = psycopg2.connect(database=db_name, user=user_name, password=password, host=host, port=port)
+   pg_db_url = os.getenv('PG_DB_URL')
+   print (pg_db_url)
+   #connection = psycopg2.connect(database=db_name, user=user_name, password=password, host=host, port=port)
+   connection = psycopg2.connect(pg_db_url,sslmode='require')
    # Finish create DB Connection
 
    #Create DB field list
