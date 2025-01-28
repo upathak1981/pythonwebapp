@@ -1,0 +1,7 @@
+<form action="/action_page.php">
+  {% for dbfield in dbfield_list %}
+  <label for="fname">{{dbfield}}</label>
+  <input type="text" id={{dbfield}} name={{dbfield}}><br><br>
+  {% endfor %}
+  <input type="submit" value="Submit Form">
+</form>
