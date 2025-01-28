@@ -43,7 +43,7 @@ def mytemplate():
    #Create DB field list
    cursor = connection.cursor()
    #cursor.execute("SELECT Column_name, data_type,udt_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_schema = 'salesforce' AND table_name   = 'contact'")
-   cursor.execute("SELECT Column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_schema = 'salesforce' AND table_name   = 'contact' And Data_type <> 'timestamp without time zone' ")
+   cursor.execute("SELECT Column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_schema = 'salesforce' AND table_name   = 'asset' And Data_type <> 'timestamp without time zone' ")
    #print (list(cursor))
    fieldlist = list(cursor)
    # fieldlist = [field.replace('(','') for field in fieldlist ]
