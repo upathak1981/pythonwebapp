@@ -26,7 +26,11 @@ def mytemplate():
    strTemplate = strTemplate + "{% endfor %} <table>"
    strTemplate = strTemplate + "<input type=""submit"" value=""Submit Form"">"
    strTemplate = strTemplate + "</form>"
+<<<<<<< HEAD
    #Finsih Create a template End of the routine
+=======
+   #Finsih Create a template finished
+>>>>>>> 4925fae74e05f7162256a982aa0348bc10df946e
     
    # Create a DB Connection
    db_name = os.getenv('db_name')
