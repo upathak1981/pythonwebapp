@@ -26,9 +26,9 @@ def mytemplate():
    strTemplate = strTemplate + "{% endfor %} <table>"
    strTemplate = strTemplate + "<input type=""submit"" value=""Submit Form"">"
    strTemplate = strTemplate + "</form>"
-   #Finsih Create a template
+   #Finsih Create a template finished
     
-   # Create a DB Connection
+   # Create a DB Connection with postgres db
    db_name = os.getenv('db_name')
    user_name = os.getenv('user_name')
    port = os.getenv('port')
