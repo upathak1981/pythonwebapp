@@ -38,9 +38,9 @@ def mytemplate():
    print (pg_db_url)
    #connection = psycopg2.connect(database=db_name, user=user_name, password=password, host=host, port=port)
    connection = psycopg2.connect(pg_db_url,sslmode='require')
-   # Finish create DB Connection
-
-   #Create DB field list for Salesforce
+   #Finsih Create a template finished
+    
+   # Create a DB Connection with postgres db in Heroku
    cursor = connection.cursor()
    #cursor.execute("SELECT Column_name, data_type,udt_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_schema = 'salesforce' AND table_name   = 'contact'")
    cursor.execute("SELECT Column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_schema = 'salesforce' AND table_name   = 'contact' And Data_type <> 'timestamp without time zone' ")
