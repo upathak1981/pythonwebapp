@@ -16,5 +16,5 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.14.15 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "UmangGithubaction_0806" #Must be unique in Heroku
+          heroku_app_name: "UmangGithubaction0806" #Must be unique in Heroku
           heroku_email: "upathak@salesforce.com"
