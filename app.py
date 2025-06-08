@@ -40,7 +40,7 @@ def mytemplate():
    connection = psycopg2.connect(pg_db_url,sslmode='require')
    #Finsih Create a template finished
     
-   # Create a DB Connection with postgres db in Heroku
+   # Create a DB Connection with postgres db in Heroku updated
    cursor = connection.cursor()
    #cursor.execute("SELECT Column_name, data_type,udt_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_schema = 'salesforce' AND table_name   = 'contact'")
    cursor.execute("SELECT Column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_schema = 'salesforce' AND table_name   = 'contact' And Data_type <> 'timestamp without time zone' ")
