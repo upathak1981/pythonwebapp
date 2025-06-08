@@ -38,7 +38,7 @@ def mytemplate():
    print (pg_db_url)
    #connection = psycopg2.connect(database=db_name, user=user_name, password=password, host=host, port=port)
    connection = psycopg2.connect(pg_db_url,sslmode='require')
-   #Finsih Create a template finished
+   #Finsih Create a template finished updated
     
    # Create a DB Connection with postgres db in Heroku
    cursor = connection.cursor()
