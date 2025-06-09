@@ -28,7 +28,7 @@ def mytemplate():
    strTemplate = strTemplate + "</form>"
    #Finsih Create a template finished
     
-   # Create a DB Connection with postgres db updated
+   # Create a DB Connection with postgres db updated for gitpush
    db_name = os.getenv('db_name')
    user_name = os.getenv('user_name')
    port = os.getenv('port')
