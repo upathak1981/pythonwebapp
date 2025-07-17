@@ -17,7 +17,7 @@ def user():
    return render_template('user.html',dbfield_list=dbfield_list)
 @app.route('/')
 def mytemplate():
-   #Create a template
+   #Create a template updated
    load_dotenv()   
    strTemplate = "<form action=""/action_page.php"">" 
    strTemplate = strTemplate + "<table>{% for dbfield in dbfield_list %}"
